@@ -5,8 +5,8 @@ import { onAuthStateChanged, signOut, User as FirebaseUser } from "firebase/auth
 import { auth } from './firebase';
 import { generateAdPlan, generateSpeech, playAudioBuffer, handleGeminiError, getStoredApiKey, setStoredApiKey, clearStoredApiKey } from './geminiService';
 import { AdPlanResponse, ContentStyle, VoiceCharacter, SUPPORTED_LANGUAGES } from './types';
-import PlanDisplay from './components/PlanDisplay';
-import Login from './components/Login';
+import PlanDisplay from './PlanDisplay';
+import Login from './Login';
 
 const ASPECT_RATIOS = [
   { value: '1:1', label: '1:1 (Square)' },
