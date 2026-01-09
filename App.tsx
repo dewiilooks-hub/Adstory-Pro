@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import { Upload, Loader2, Video, Sparkles, Clapperboard, UserCheck, User, Music, Play, Layers, LogOut, Globe, KeyRound } from 'lucide-react';
 import { onAuthStateChanged, signOut, User as FirebaseUser } from "firebase/auth";
 import { auth } from './firebase';
-import { generateAdPlan, generateSpeech, playAudioBuffer, handleGeminiError, getStoredApiKey, setStoredApiKey, clearStoredApiKey } from './services/geminiService';
+import { generateAdPlan, generateSpeech, playAudioBuffer, handleGeminiError, getStoredApiKey, setStoredApiKey, clearStoredApiKey } from './geminiService';
 import { AdPlanResponse, ContentStyle, VoiceCharacter, SUPPORTED_LANGUAGES } from './types';
 import PlanDisplay from './components/PlanDisplay';
 import Login from './components/Login';
