@@ -57,11 +57,9 @@ export default function App() {
     try {
       const currentKey = getStoredApiKey();
       const input = window.prompt(
-        "Paste Gemini API Key (Google AI Studio).
-
-Kosongkan lalu OK untuk menghapus.",
-        currentKey || ""
-      );
+  "Paste Gemini API Key (Google AI Studio).\n\nKosongkan lalu OK untuk menghapus.",
+  currentKey ?? ""
+);
 
       if (input === null) return; // user cancel
 
